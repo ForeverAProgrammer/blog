@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Blog</title>
-    <link>http://example.org/posts/</link>
+    <link>https://foreveraprogrammer.github.io/blog/posts/</link>
     <description>Recent content in Posts on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 Nov 2017 23:52:41 -0600</lastBuildDate>
     
-	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://foreveraprogrammer.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My First Blog Post. Not</title>
-      <link>http://example.org/posts/my-first-post/</link>
+      <link>https://foreveraprogrammer.github.io/blog/posts/my-first-post/</link>
       <pubDate>Mon, 13 Nov 2017 23:52:41 -0600</pubDate>
       
-      <guid>http://example.org/posts/my-first-post/</guid>
+      <guid>https://foreveraprogrammer.github.io/blog/posts/my-first-post/</guid>
       <description>So this is not my first blog post.
 My original blog was better suited for a documentation/wiki website which is now hosted here.
 Originally I hosted my blog on Dreamhost which worked pretty well. Dreamhost made it really easy to setup WordPress but I got tired of paying to have the blog hosted there. So I moved the site to WordPress.com but found that while I could host the site for free I would have to pay a fee per month to modify the CSS.</description>
