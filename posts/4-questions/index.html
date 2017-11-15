@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta property="og:title" content=" The 4 Questions I ask myself before starting a project &middot;  Blog" />
+  
+  <meta property="og:site_name" content="Blog" />
+  <meta property="og:url" content="https://foreveraprogrammer.github.io/blog/posts/4-questions/" />
+  
+  
+  <meta property="og:type" content="article" />
+  
+  <meta property="og:article:published_time" content="2017-11-14T12:50:54-06:00" />
+  
+  
+
+  <title>
+     The 4 Questions I ask myself before starting a project &middot;  Blog
+  </title>
+
+  <link rel="stylesheet" href="https://foreveraprogrammer.github.io/blog/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://foreveraprogrammer.github.io/blog/css/main.css" />
+  <link rel="stylesheet" href="https://foreveraprogrammer.github.io/blog/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://foreveraprogrammer.github.io/blog/css/github.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400" type="text/css">
+  
+</head>
+<body>
+    <header class="global-header"  style="background-image:url( /images/bg.jpg )">
+    <section class="header-text">
+      <h1><a href="https://foreveraprogrammer.github.io/blog/">Blog</a></h1>
+      
+      <div class="sns-links hidden-print">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+      
+      <a href="https://foreveraprogrammer.github.io/blog/" class="btn-header btn-back hidden-xs">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+        &nbsp;Home
+      </a>
+      
+      
+    </section>
+  </header>
+  <main class="container">
+
+
+<article>
+  <header>
+    <h1 class="text-primary">The 4 Questions I ask myself before starting a project</h1>
+    <div class="post-meta clearfix">
+      <div class="post-date pull-left">
+        Posted on
+        <time datetime="2017-11-14T12:50:54-06:00">
+          Nov 14, 2017
+        </time>
+      </div>
+      <div class="pull-right">
+        
+      </div>
+    </div>
+  </header>
+  <section>
+    
+
+<p>Anytime I work on a project I ask myself the following four questions to figure out what code I’ll write. I also use these four questions to figure out if I should even work on a request.</p>
+
+<h2 id="what-s-the-benefit">What’s the benefit?</h2>
+
+<p><strong>Examples:</strong></p>
+
+<ul>
+<li>What’s the benefit of this change?</li>
+<li>How much will it improve performance?</li>
+<li>Will it decrease performance?</li>
+<li>Will anyone even noticed the change?</li>
+<li>Will it make the code easier/harder to maintain?</li>
+<li>Will it make the application more secure or less secure?</li>
+</ul>
+
+<h2 id="what-s-the-effort">What’s the effort?</h2>
+
+<p><strong>Examples:</strong></p>
+
+<ul>
+<li>How long will this take?</li>
+<li>How many files/lines of code will I have to change?</li>
+<li>How many applications will this effect?</li>
+<li>Will I have to involve other people to make this change?</li>
+<li>Will I have to configure/setup servers for this change?</li>
+</ul>
+
+<h2 id="what-s-the-risks">What’s the risks?</h2>
+
+<p><strong>Examples:</strong></p>
+
+<ul>
+<li>What is the risk associated with this change?</li>
+<li>What’s the worse that can happen if something goes wrong?</li>
+<li>What’s the business risk associated with this change?</li>
+<li>How much money will this costs if something goes wrong?</li>
+</ul>
+
+<h2 id="how-will-this-work-with-future-code">How will this work with future code?</h2>
+
+<p><strong>Examples:</strong></p>
+
+<ul>
+<li>Will I have to rewrite applications in the future to work with this?</li>
+<li>How hard will it be to switch new applications to this new code in the future?</li>
+<li>Will it handle future changes with little effort?
+
+<ul>
+<li>Like coding a something to accept more then one part number instead of hard coding it to one part number</li>
+</ul></li>
+<li>Is the code change/project compatible with other planned code changes/projects?</li>
+</ul>
+
+<p>These questions will often determine the solution I decide to go with.</p>
+
+<p>For example if I’m working on an old system that uses ASP.NET Web Forms with the AJAX Control Kit I’ll avoid using JavaScript to make the page look prettier because when AJAX Control Kit partial post backs happens it wipes out the JavaScript state which requires you to re-initialize the JavaScript every time a partial post back happens. In that case the benefit is not worth the effort and the bug risks is very high. The amount of code to get something like JQuery tabs working is kind of crazy because of how ASP.NET Web Forms work.</p>
+
+<p>If the code change that will increase the likelihood of new bugs being added to the future with a small benefit I’ll try to avoid it because the risks is greater then the benefit. The same is true for a change with a small benefit that can cause a lot of money to be lost if it doesn’t work correctly.</p>
+
+<p>I actually witnessed a very expensive fine happen to a client in real time because they designed their account software to use the same database as some other software and the other software locked up the database causing them to miss an important deadline. Having the two applications use the same database made it easy to share data between the two systems but when the database went down it took out two applications with it.</p>
+
+<p>I also look at how the code will work with future changes. I once coded a solution to support multiple parts for a machine though we were using only one part at the time. Later on when someone wanted to experiment with a new part I just setup the new part in the database and the code supported the new part without any code changes. If I had hard coded that part number in the code then I would have had to change the code and do a new release. Because I designed the code with the ability to support multiple parts I didn’t have to make any code changes when they wanted to test the new part.</p>
+
+<p>When developing code I always want to create the perfect code. But using these questions keep me from scope creeping my code changes. It also forces me to design to with business risks, bug risk and estimates in mind.</p>
+
+  </section>
+  <footer>
+    
+    <section class="author-info row">
+      <div class="author-avatar col-md-2">
+        
+      </div>
+      <div class="author-meta col-md-6">
+        
+        
+      </div>
+      
+    </section>
+    <ul class="pager">
+      
+      <li class="previous"><a href="https://foreveraprogrammer.github.io/blog/posts/code-examples/"><span aria-hidden="true">&larr;</span> Older</a></li>
+      
+      
+      <li class="next disabled"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+      
+    </ul>
+  </footer>
+</article>
+
+  </main>
+  <footer class="container global-footer">
+    <div class="copyright-note pull-left">
+      
+    </div>
+    <div class="sns-links hidden-print">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <script src="https://foreveraprogrammer.github.io/blog/js/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+  
+</body>
+</html>
+

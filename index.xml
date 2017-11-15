@@ -6,10 +6,21 @@
     <description>Recent content on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Nov 2017 12:41:26 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 14 Nov 2017 12:50:54 -0600</lastBuildDate>
     
 	<atom:link href="https://foreveraprogrammer.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The 4 Questions I ask myself before starting a project</title>
+      <link>https://foreveraprogrammer.github.io/blog/posts/4-questions/</link>
+      <pubDate>Tue, 14 Nov 2017 12:50:54 -0600</pubDate>
+      
+      <guid>https://foreveraprogrammer.github.io/blog/posts/4-questions/</guid>
+      <description>Anytime I work on a project I ask myself the following four questions to figure out what code I’ll write. I also use these four questions to figure out if I should even work on a request.
+What’s the benefit? Examples:
+ What’s the benefit of this change? How much will it improve performance? Will it decrease performance? Will anyone even noticed the change? Will it make the code easier/harder to maintain?</description>
+    </item>
     
     <item>
       <title>Code Examples</title>
